@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71f59c3b006bca3a588a190e2508888c3ede5e26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+320f46408c45e4bc01d43fe9a0c3a1139e65e4ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
