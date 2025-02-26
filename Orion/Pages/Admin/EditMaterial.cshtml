@@ -1,0 +1,224 @@
+@page
+@model Orion.Pages.Admin.EditMaterialModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="cssAdmin/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cssAdmin/custom.css">
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Material Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="cssAdmin/checkout.css">
+    <title>Edit Material</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="body-overlay"></div>
+
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="img/GRAD logo dark.png" class="img-fluid" /><span id="admoon">Welcome Amr</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="Dashboard.html" class="dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">border_color</i><span>Forms</span>
+                    </a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu5">
+                        <li><a href="AddAdmin.html">Add Admin</a></li>
+                        <li><a href="addCategory.html">Add Category</a></li>
+                        <li><a href="addMaterial.html">Add Material</a></li>
+                        <li><a href="AddSuper.html">Add Supervisors</a></li>
+                        <li><a href="AddOrphanage.html">Add Orphanage</a></li>
+                        <li><a href="editOrphanage.html">Edit Orphanage</a></li>
+                        <li><a href="EditMaterial.html">Edit Material</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">grid_on</i><span>Tables</span>
+                    </a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">content_copy</i><span>Pages</span>
+                    </a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+                        <li><a href="adminMaterial.html">Materials</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        <li><a href="detailsAdmin.html">Details</a></li>
+                        <li><a href="orphanageAdmin.html">Orphanage</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <div class="top-navbar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-none d-none">
+                            <span class="material-icons">arrow_back_ios</span>
+                        </button>
+                        <a class="navbar-brand" href="#">Orphanages</a>
+                        <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="material-icons">more_vert</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <form method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Material.Id" />
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <h3 class="title" id="SigninTT">Edit Material</h3>
+
+                        <div class="inputBox">
+                            <span>Name :</span>
+                            <input asp-for="Material.MaterialName" placeholder="express yourself">
+                        </div>
+                        <div class="inputBox">
+                            <span>About :</span>
+                            <textarea asp-for="Material.MaterialDetails" placeholder="express yourself" class="textarea"></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <span>Picture :</span>
+                            <input type="file" asp-for="MaterialPicture" placeholder="***********">
+                        </div>
+                        <div class="inputBox">
+                            <span>Location:</span>
+                            <input asp-for="Material.MaterialPrice" placeholder="dokki/Giza">
+                        </div>
+                        <div class="inputBox">
+                            <span>Location:</span>
+                            <input asp-for="Material.MaterialSizes" placeholder="dokki/Giza">
+                        </div>
+                        <div class="inputBox">
+                            <span>Location:</span>
+                            <input asp-for="Material.MaterialColors" placeholder="dokki/Giza">
+                        </div>
+                        <div class="inputBox">
+                            <span>Location:</span>
+                            <input asp-for="Material.MaterialType" placeholder="dokki/Giza">
+                        </div>
+
+                        <div class="BTBOT"> <input type="submit" value="Submit" class="button22"></div>
+
+
+            </form>
+            @* <form action="">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="title">Edit Material</h3>
+                        <div class="inputBox">
+                            <span>Material Name:</span>
+                            <input type="text" placeholder="beaded bracelet">
+                        </div>
+                        <div class="inputBox">
+                            <span>Material Details:</span>
+                            <input type="text" placeholder="beaded bracelet made with love, joy and little sprinkles">
+                        </div>
+                        <div class="inputBox">
+                            <span>Price:</span>
+                            <input type="number" placeholder="5$">
+                        </div>
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>Picture:</span>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h3 class="title">Features</h3>
+                        <div class="inputBox" id="productCheckboxx">
+                            <span>Available Sizes:</span>
+                            <div class="productCheck">
+                                <input type="checkbox" id="check1">
+                                <label for="check1">7</label>
+                            </div>
+                            <div class="productCheck">
+                                <input type="checkbox" id="check2">
+                                <label for="check2">8</label>
+                            </div>
+                            <div class="productCheck">
+                                <input type="checkbox" id="check3">
+                                <label for="check3">9</label>
+                            </div>
+                        </div>
+                        <div class="inputBox" id="productCheckboxx">
+                            <span>Available Colors:</span>
+                            <div class="productCheck">
+                                <input type="checkbox" id="red">
+                                <label for="red">Red</label>
+                            </div>
+                            <div class="productCheck">
+                                <input type="checkbox" id="blue">
+                                <label for="blue">Blue</label>
+                            </div>
+                            <div class="productCheck">
+                                <input type="checkbox" id="green">
+                                <label for="green">Green</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="BTBOT">
+                    <input type="submit" value="Edit" class="button22">
+                </div>
+            </form> *@
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+            });
+
+            $('.more-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+        });
+    </script>
+</body>
+
+</html>

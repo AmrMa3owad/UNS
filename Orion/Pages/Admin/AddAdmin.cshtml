@@ -1,0 +1,225 @@
+@page
+@model Orion.Pages.Admin.AddAdminModel
+@{
+    ViewData["Title"] = "Add Admin";
+}
+
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="cssAdmin/bootstrap.min.css">
+    <!----css3---->
+    <link rel="stylesheet" href="cssAdmin/custom.css">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="cssAdmin/checkout.css">
+    <title>add admin </title>
+</head>
+
+<body>
+    <div class="Add-Admin">
+        
+    </div>
+    <div class="wrapper">
+
+
+        <div class="body-overlay"></div>
+
+
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="img/GRAD logo dark.png" class="img-fluid" /><span id="admoon">Welcome Amr</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="Dashboard.html" class="dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">border_color</i><span>forms</span>
+                    </a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu5">
+                        <li>
+                            <a href="AddAdmin.html">Add admin</a>
+                        </li>
+                        <li>
+                            <a href="addCategory.html">Add category</a>
+                        </li>
+                        <li>
+                            <a href="addMaterial.html">Add material</a>
+                        </li>
+                        <li>
+                            <a href="AddSuper.html">Add Supervisors</a>
+                        </li>
+                        <li>
+                            <a href="AddOrphanage.html">Add Orphanage</a>
+                        </li>
+                        <li>
+                            <a href="editOrphanage.html">Edit Orphanage</a>
+                        </li>
+                        <li>
+                            <a href="EditMaterial.html">Edit material</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">grid_on</i><span>tables</span>
+                    </a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                        <li>
+                            <a href="orphanageSSS.html">Orphanages table</a>
+                        </li>
+                        <li>
+                            <a href="supertable.html">Supervisors table</a>
+                        </li>
+                        <li>
+                            <a href="childstable.html">stars table</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">content_copy</i><span>Pages</span>
+                    </a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+                        <li>
+                            <a href="adminMaterial.html">Materials</a>
+                        </li>
+                        <li>
+                            <a href="ContactUs.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+        </nav>
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <div class="top-navbar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                            <span class="material-icons">arrow_back_ios</span>
+                        </button>
+
+                        <a class="navbar-brand" href="#"> Dashboard </a>
+
+                        <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="material-icons">more_vert</span>
+                        </button>
+
+
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="container">
+            <form method="post" asp-page-handler="Admin" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="title">Personal information</h3>
+                        <div class="inputBox">
+                            <span>user name</span>
+                            <input type="text" asp-for="FirstName" placeholder="Your Name" class="input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>first name</span>
+                            <input type="text" asp-for="LastName" placeholder="Your Name" class="input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>last name</span>
+                            <input type="text" asp-for="Username" placeholder="Your Name" class="input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>email</span>
+                            <input type="email" asp-for="Email" placeholder="folan@gmail.com" class="input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>password:</span>
+                            <input type="password" asp-for="Password" placeholder="********" class="input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>confirm password</span>
+                            <input type="password" placeholder="********" class="input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>phone number</span>
+                            <input type="text" asp-for="PhoneNumber" placeholder="0123456789" class="input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>Gender</span>
+                            <select name="" id="">
+                                @* <input type="radio" asp-for="User.Gender" value="Male" id="genderMale" class="input" required>
+                                <label for="genderMale">Male</label> *@
+
+                                <option asp-for="Gender" value="male" name="Gender">Male</option>
+                                <option asp-for="Gender" value="female" name="Gender">Female</option>
+                            </select>
+                        </div>
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>date of birth</span>
+                                <input type="date" asp-for="DateOfBirth" placeholder="30/3/2003" class="input" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>profile image</span>
+                                <input type="file" asp-for="ProfileImage" placeholder="Enter Your Image" class="input" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="BTBOT">
+                    <input type="submit" value="Add" class="button22">
+                </div>
+            </form>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $('#content').toggleClass('active');
+                });
+
+                $('.more-button,.body-overlay').on('click', function () {
+                    $('#sidebar,.body-overlay').toggleClass('show-nav');
+                });
+            });
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+@page
+@model Orion.Pages.Supervisor.superProfileModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/cssSupervisor/profilee.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Profile</title>
+</head>
+<body>
+    <div class="header__wrapper">
+        <header></header>
+        <div class="cols__container">
+            <div class="left__col">
+                <div class="img__container">
+                    @if (Model.SupervisorImg != null && Model.SupervisorImg.Any())
+                    {
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.SupervisorImg)" alt="Supervisor Photo" />
+                    }
+                    <h2>@Model.SupervisorName</h2>
+                    <p>Supervisor</p>
+
+                    <ul class="about">
+                        <li><span>@Model.FreelancerNum</span> freelancers</li>
+                        <li><span>@Model.ProductsNum</span> products</li>
+                        
+                    </ul>
+
+                    <div class="content">
+                        <p>
+                            @Model.SupervisorInfo
+                        </p>
+                        <div class="editProfileBtn">
+                            <a href="editPro.html?supervisorId=@Model.SupervisorId" class="editProfile"><i class="fas fa-edit"></i>Edit profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right__col">
+                <nav>
+                    <h2>Stars profiles</h2>
+                </nav>
+                <div class="photos">
+                    @foreach (var freelancer in Model.SupervisorFreelancer)
+                    {
+                        <div class="cardShop">
+                            <div class="imgbx">
+                                <img src="data:image/jpeg;base64,@Convert.ToBase64String(@freelancer.StarPhoto)" alt="Freelancer Photo" />
+                            </div>
+                            <div class="content">
+                                <div class="details">
+                                    <div class="name">
+                                        <h2>@freelancer.User.FirstName <br><span>@freelancer.Skill</span></h2>
+                                    </div>
+                                    <div class="prod-btn">
+                                        <a href="childsProfile.html?freelancerId=@freelancer.UserId" class="button22c">View profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

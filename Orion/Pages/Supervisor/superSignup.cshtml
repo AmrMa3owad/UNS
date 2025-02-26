@@ -1,0 +1,120 @@
+@page
+@model Orion.Pages.Supervisor.superSignupModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/cssSupervisor/checkout.css">
+    <title>Supervisor Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="shrytaREG"> <img src="img/mainnpay.jpg" alt="" srcset=""></div>
+
+        <form method="post" enctype="multipart/form-data" asp-page="/Supervisor/superSignup" asp-page-handler="SignUp">
+            <!-- Added form element and required attributes -->
+
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Personal information</h3>
+
+                    <div class="inputBox">
+                        <span>First Name</span>
+                        <input type="text" asp-for="FirstName" placeholder="First Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Last Name</span>
+                        <input type="text" asp-for="LastName" placeholder="Last Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Username</span>
+                        <input type="text" asp-for="Username" placeholder="Username">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email</span>
+                        <input type="email" asp-for="Email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Password</span>
+                        <input type="password" asp-for="Password" placeholder="********">
+                    </div>
+                    <div class="inputBox">
+                        <span>Confirm Password</span>
+                        <input type="password" asp-for="ConfirmPassword" placeholder="********">
+                    </div>
+                    <div class="inputBox">
+                        <span>Phone Number</span>
+                        <input type="text" asp-for="PhoneNumber" placeholder="0123456789">
+                    </div>
+                    <div class="inputBox">
+                        <span>Gender</span>
+                        <select asp-for="Gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Date of Birth</span>
+                            <input type="date" asp-for="DateOfBirth" placeholder="30/3/2003">
+                        </div>
+                        <div class="inputBox">
+                            <span>Profile Image</span>
+                            <input type="file" asp-for="ProfileImage">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title" id="sklkl">Skill information</h3>
+
+                    <div class="inputBox">
+                        <span>Responsible Region</span>
+                        <select asp-for="SupervisorRegion">
+                            <option value="dokki">Dokki</option>
+                            <option value="nasr city">Nasr City</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>Skill</span>
+                        <select asp-for="SupervisorSkill">
+                            <option value="resin">Resin</option>
+                            <option value="crochet">Crochet</option>
+                            <option value="beads">Beads</option>
+                            <option value="punch needle">Punch Needle</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>Orphanage</span>
+                        <div id="supSiCh">
+                            <div class="productCheck">
+                                <input type="radio" asp-for="SelectedOrphanages" value="dar el aml" class="upcheck">
+                                <label for="check1">Dar el Aml</label>
+                            </div>
+                            <div class="productCheck">
+                                <input type="radio" asp-for="SelectedOrphanages" value="dar hayah" class="upcheck">
+                                <label for="check2">Dar Hayah</label>
+                            </div>
+                            <div class="productCheck">
+                                <input type="radio" asp-for="SelectedOrphanages" value="little sparks" class="upcheck">
+                                <label for="check3">Little Sparks</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="BTBOT">
+                    <input type="submit" value="Sign Up" class="button22">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

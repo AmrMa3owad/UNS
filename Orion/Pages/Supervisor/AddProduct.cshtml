@@ -1,0 +1,78 @@
+@page
+@model Orion.Pages.Supervisor.AddProductModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cssSupervisor/checkout.css">
+    <title>Add product</title>
+</head>
+<body>
+    <div class="container">
+        <div class="shryta" id="shrytaAddPro"> <img src="/img/mainnpay.jpg" alt="" srcset=""></div>
+        <form method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="FreelancerId" />
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">New product</h3>
+                    <div class="inputBox">
+                        <span>Product name :</span>
+                        <input type="text" asp-for="Product.ProductName" placeholder="beaded bracelet">
+                    </div>
+                    <div class="inputBox">
+                        <span>Product details :</span>
+                        <input type="text" asp-for="Product.Description" placeholder="beaded bracelet made with love, joy and little sprinkles">
+                    </div>
+                    <div class="inputBox">
+                        <span>Price :</span>
+                        <input type="number" asp-for="Product.ProductPrice" placeholder="5$">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Picture :</span>
+                            <input type="file" asp-for="ProductImageFile">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">features</h3>
+                    <div class="inputBox" id="productCheckboxx">
+                        <span>Available sizes :</span>
+                        <div class="productCheck">
+                            <input type="checkbox" asp-for="Product.ProductSize" value="7cm" id="check1">
+                            <label for="check1">7</label>
+                        </div>
+                        <div class="productCheck">
+                            <input type="checkbox" asp-for="Product.ProductSize" value="8cm" id="check2">
+                            <label for="check2">8</label>
+                        </div>
+                        <div class="productCheck">
+                            <input type="checkbox" asp-for="Product.ProductSize" value="9cm" id="check3">
+                            <label for="check3">9</label>
+                        </div>
+                    </div>
+                    <div class="inputBox" id="productCheckboxx">
+                        <span>Available colors :</span>
+                        <div class="productCheck">
+                            <input type="checkbox" asp-for="Product.ProductColor" value="red" id="red">
+                            <label for="red">red</label>
+                        </div>
+                        <div class="productCheck">
+                            <input type="checkbox" asp-for="Product.ProductColor" value="blue" id="blue">
+                            <label for="blue">blue</label>
+                        </div>
+                        <div class="productCheck">
+                            <input type="checkbox" asp-for="Product.ProductColor" value="green" id="green">
+                            <label for="green">green</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="BTBOT"><input type="submit" value="Add Product" class="button22"></div>
+        </form>
+    </div>
+</body>
+</html>

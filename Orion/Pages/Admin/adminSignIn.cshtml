@@ -1,0 +1,48 @@
+@page
+@model Orion.Pages.Admin.adminSignInModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="cssAdmin/checkout.css">
+    <title>Supervisor Signin </title>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="shryta" id="signinsh"> <img src="img/mainnpay.jpg" alt="" srcset=""></div>
+
+        <form method="post" asp-page-handler="SignIn" class="sign-in-form">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title" id="SigninTT">Admin Signin</h3>
+
+                
+                <div class="inputBox">
+                    <span>email :</span>
+                        <input type="email" name="Email" placeholder="example@example.com">
+                 </div>
+                <div class="inputBox">
+                    <span>password :</span>
+                        <input type="password" name="Password" placeholder="***********">
+                    </div>
+                
+        <div class="BTBOT"> <input type="submit" value="Signin" class="button22"></div>
+       <div class="forgotpass">
+        <a href="">forgot password ?</a>
+       </div> 
+
+    </form>
+
+</div>    
+    
+</body>
+</html>

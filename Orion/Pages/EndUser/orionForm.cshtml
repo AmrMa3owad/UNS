@@ -1,0 +1,125 @@
+@page
+@model orionFormModel
+@{
+    Layout = "~/pages/shared/_Layout-Dark.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/cssEndUser/checkout.css">
+     <!-- styles  -->
+
+     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <title>star registration </title>
+
+</head>
+<body>
+  
+
+
+<div class="container-donate">
+    <div class="shrytaREG"> <img src="img/mainnpay.jpg" alt="" srcset=""></div>
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Personal information</h3>
+
+                <div class="inputBox">
+                    <span>full name</span>
+                    <input type="text" placeholder="john deo">
+                </div>
+                <div class="inputBox">
+                    <span>email</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>password:</span>
+                    <input type="password" placeholder="********">
+                </div>
+                <div class="inputBox">
+                    <span>confirm password</span>
+                    <input type="password" placeholder="********">
+                </div>
+                <div class="inputBox">
+                    <span>phone number</span>
+                    <input type="text" placeholder="0123456789">
+                </div>
+                <div class="inputBox" >
+                    <span>Gender</span>
+                    <select name="" id=""><option value="male" name="Gender">Male</option>
+                        <option value="female" name="Gender">Female</option></select>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>date of birth</span>
+                        <input type="date" placeholder="30/3/2003">
+                    </div>
+                    <div class="inputBox">
+                        <span>profile image</span>
+                        <input type="file" >
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title" id="sklkl">Skill information</h3>
+
+                <div class="inputBox" >
+                    <span>Supervisor</span>
+                    <select name="" id=""><option value="Ahmed" name="Supervisor">Ahmed</option>
+                        <option value="sara" name="Supervisor">sara</option></select>
+                </div>
+                <div class="inputBox" >
+                    <span>Skill</span>
+                    <select name="" id="">
+                        <option  name="skill">Resin</option>
+                        <option  name="skill">crochet</option>
+                        <option  name="skill">beads</option>
+                        <option  name="skill">punch needle</option>
+
+                    </select>
+                </div>
+                <div class="inputBox" >
+                    <span>Orphanage</span>
+                    <select name="" id="">
+                        <option  name="Orphanage">Dar el aml</option>
+                        <option  name="Orphanage">Dar hayah</option>
+                        <option  name="Orphanage">little sparks</option>
+                        <option  name="Orphanage">O dar</option>
+
+                    </select>
+                </div>
+                
+
+            </div>
+    
+        </div>
+
+
+       <div class="BTBOT"> <input type="submit" value="Sign UP" class="button22"></div>
+
+    </form>
+
+</div>    
+    
+
+
+    <!-- link js -->
+    <script src="~/js/mainCart.js" asp-append-version="true"></script>
+</body>
+</html>

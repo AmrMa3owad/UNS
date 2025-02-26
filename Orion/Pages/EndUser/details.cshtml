@@ -1,0 +1,99 @@
+@page
+@model Orion.Pages.EndUser.detailsModel
+@{
+    Layout = "~/pages/shared/_Layout-Dark.cshtml";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/cssEndUser/ddetailss.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Product details</title>
+</head>
+<body>
+    <input type="hidden" asp-for="ProductId" />
+    <div class="pdetail-container">
+        <div class="card">
+            <div class="shoeBackground">
+                <div class="gradients">
+                    <div class="gradient second" color="purple"></div>
+                    <div class="gradient" color="red"></div>
+                    <div class="gradient" color="green"></div>
+                    <div class="gradient" color="orange"></div>
+                    <div class="gradient" color="black"></div>
+                </div>
+                <h1 class="nike">Orion</h1>
+                <a href="orphanage.html" class="Dlogo">Dar ElAml</a>
+                <a href="#" class="share"><i class="fas fa-share-alt"></i></a>
+                <img src="data:image/jpg;base64,@Convert.ToBase64String(Model.Product.ProductImage)" alt="" class="shoe show product-img" color="purple">
+                <img src="data:image/jpg;base64,@Convert.ToBase64String(Model.Product.ProductImage)" alt="" class="shoe product-img" color="red">
+                <img src="data:image/jpg;base64,@Convert.ToBase64String(Model.Product.ProductImage)" alt="" class="shoe product-img" color="green">
+                <img src="data:image/jpg;base64,@Convert.ToBase64String(Model.Product.ProductImage)" alt="" class="shoe product-img" color="orange">
+                <img src="data:image/jpg;base64,@Convert.ToBase64String(Model.Product.ProductImage)" alt="" class="shoe product-img" color="black">
+            </div>
+            <div class="info">
+                <div class="shoeName">
+                    <div>
+                        <h1 class="big product-title">@Model.Product.ProductName</h1>
+                       
+                    </div>
+                    <h3 class="small"><a href="childProfile.html">Star: <span class="spana">Logy ali</span></a></h3>
+                </div>
+                <div class="description">
+                    <h3 class="title">Product Info</h3>
+                    <p class="text">@Model.Product.Description</p>
+                </div>
+                <div class="color-container">
+                    <h3 class="title">Color</h3>
+                    <div class="colors">
+                        <span class="color active" primary="#7e6e95" color="purple"></span>
+                        <span class="color" primary="#f84848" color="red"></span>
+                        <span class="color" primary="#29b864" color="green"></span>
+                        <span class="color" primary="#ff5521" color="orange"></span>
+                        <span class="color" primary="#444" color="black"></span>
+                    </div>
+                </div>
+                <div class="buy-price">
+                    <a href="checkout.html" class="buy add-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                    <div class="price">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h1 class="product-price">$@Model.Product.ProductPrice</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Feedbacks</h1>
+    <div class="feedback-container">
+        @foreach (var feedback in Model.Feedbacks)
+        {
+            <div class="card-review">
+                <div class="feedback-info">
+                    <h2 class="feedback-msg">@feedback.Msg</h2>
+                    <span class="feedback-mail">@feedback.Mail</span>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="review-form-container">
+        <div class="rating-card">
+            <form method="post" class="feedback-form">
+                <div class="text-wrapper">
+                    <p class="text-primary">Please Rate Your Experience</p>
+                </div>
+                <input type="email" asp-for="Feedback.Mail" placeholder="folan@gmail.com" class="input" required>
+                <textarea asp-for="Feedback.Msg" class="feedarea" placeholder="Your feedback..." required></textarea>
+                <button type="submit" class="feed-btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Js/mainCart.js"></script>
+    <script src="Js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@page
+@model Orion.Pages.EndUser.feedbackModel
+@{
+    ViewData["Title"] = "Contact Us";
+}
+@{
+    Layout = "~/pages/shared/_layout.cshtml";
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cssEndUser/trial.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+    <title>Contact Us</title>
+</head>
+<body>
+  
+    <div class="feed-container">
+        <form method="post" class="fefe-form">
+            <div class="fefe-title">Contact us</div>
+            <input type="email" asp-for="ContactUs.Mail" placeholder="folan@gmail.com" class="input" required>
+            <textarea asp-for="ContactUs.Msg" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+   
+    <!-- link js -->
+    <script src="~/js/mainCart.js" asp-append-version="true"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+@page
+@model Orion.Pages.Admin.verifyModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="cssAdmin/checkout.css">
+    <title>Verify OTP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="shryta" id="forgotShryta">
+            <img src="img/mainnpay.jpg" alt="" srcset="">
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title" id="SigninTT">Verify OTP</h3>
+                    <div class="inputBox">
+                        <span>Verification code :</span>
+                        <input type="text" asp-for="VerificationCode" placeholder="Enter OTP" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Generated OTP :</span>
+                        <p>@Model.GeneratedOTP</p>
+                    </div>
+                    <div class="BTBOT">
+                        <input type="submit" value="Submit" class="button22">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

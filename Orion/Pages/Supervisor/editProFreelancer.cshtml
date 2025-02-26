@@ -1,0 +1,42 @@
+@page
+@model editProFreelancerModel
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/cssSupervisor/checkout.css">
+    <title>Edit profile </title>
+</head>
+<body> 
+    <div class="container">
+        <div class="shryta" id="signinsh"> <img src="img/mainnpay.jpg" alt="" srcset=""></div>
+
+        <form method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Freelancer.UserId" />
+            <div class="row">
+                <div class="col">
+                    <h3 class="title" id="SigninTT">Edit profile</h3>
+
+                    <div class="inputBox">
+                        <span>about :</span>
+                        <textarea asp-for="Freelancer.FreelancerDescription" placeholder="express yourself" class="textarea"></textarea>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>picture :</span>
+                        <input type="file" asp-for="ProfilePicture" placeholder="***********">
+                    </div>
+
+                    <div class="BTBOT">
+                        <input type="submit" value="Submit" class="button22">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

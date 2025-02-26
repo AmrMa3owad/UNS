@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background-color: #e2dfe6;
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  border-radius: 5px;
+
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:50px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#7e6e95;
+  padding-bottom: 5px;
+  text-transform: uppercase; 
+}
+#sklkl{
+  color: #ed927e;
+}
+.container form .row .col .inputBox{
+  margin:7px 0;
+  border-radius: 55px;
+
+}
+#gender{
+  display: flex;
+}
+.gendeRadio {
+  width: 30px;
+}
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 55px;
+}
+
+.container form .row .col .inputBox textarea{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 55px;
+}
+.container form .row .col .inputBox textarea:focus{
+  border:1px solid #000;
+}
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.shryta{
+  height: 600px;
+  width: 100px;
+}
+.shryta img{
+width: 100%;
+height: 100%;
+
+}
+.shrytaREG{
+  height: 778px;
+  width: 100px;
+}
+.shrytaREG img{
+width: 100%;
+height: 100%;
+
+}
+
+
+.container form .row .col .inputBox select{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 55px;
+}
+
+.container form .row .col .inputBox select:focus{
+  border:1px solid #000;
+}
+.container form .row .col .inputBox option{
+  background-color: #e2dfe6;
+  border: none;
+
+}
+.container form .row .col .inputBox option:focus{
+  background-color: #7e6e95;
+  color: #ffffff;
+}
+.BTBOT{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button22 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #ffffff;
+  padding: 0.9em 3em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #ed927e;
+  border: 1px solid #ed927e;
+  box-shadow: 6px 6px 12px #505050, -6px -6px 12px #c5b1b1;
+  margin-top: 3%;
+
+}
+
+.button22:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button22:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button22:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #7e6e95;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button22:hover {
+  color: #ffffff;
+  border: 1px solid #7e6e95;
+}
+
+.button22:hover:before {
+  top: -35%;
+  background-color: #7e6e95;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button22:hover:after {
+  top: -45%;
+  background-color: #7e6e95;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+@media (max-width: 768px) {
+.shrytaREG{
+  height: 800px;
+}
+}
+
+@media (max-width: 500px) {
+ 
+  .shryta{
+    display: none;
+  }
+  .shrytaREG{
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  
+  .container form .row .col{
+    flex:1 1 150px;
+  }
+
+   
+}
+@media (max-width: 414px) {
+  .container form .row .col{
+    flex:1 1 250px;
+  }
+  
+}
+/* ***********************************************add product form special css************************** */
+.productCheck{
+  display: flex;
+  margin: 5px;
+
+}
+.productCheck label{
+  margin-left: 1rem;
+}
+#productCheckboxx{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#shrytaAddPro{
+  height: 515px;
+  width: 100px;
+}
+
+/* ---------------------------superv siginin---------------------------------- */
+.forgotpass{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+#SigninTT{
+  text-align: center;
+}
+#signinsh{
+  height: 374px;
+}
+/* ---------------------------superv siginin---------------------------------- */
+#supSiCh{
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+}
+.upcheck{
+  display: inline-block;
+}
+/* ---------------------------------new orphanage form----------------------------- */
+#orphash{
+  height: 470px;
+}
+#new{
+  height: 535px;
+
+}
+.categoryShryta{
+  height: 300px;
+}
+/* --------------------------------------edit orphanage------------------------------------- */
+#editoo{
+  height: 453px;
+}
+/* -------------------------------------add categ-------------------------------------- */
+#categoryShryta{
+  height: 338px;
+}
+/* ----------------------------------------forgotpass---------------------------------------- */
+#forgotShryta{
+  height:250px ;
+}
+/* -----------------------------------------change------------------------------------------------- */
+#change{
+  height: 340px;
+}
