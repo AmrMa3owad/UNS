@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+320f46408c45e4bc01d43fe9a0c3a1139e65e4ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d8552b8d111c0edbe928bbc135b9d864ab877e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

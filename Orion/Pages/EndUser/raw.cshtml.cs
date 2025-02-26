@@ -65,28 +65,28 @@ namespace Orion.Pages.EndUser
 
         }
 
-        public async Task<JsonResult> OnPostAddToCartAsync([FromBody] CartProduct cartProduct)
-        {
-            var product = await _productService.Get(cartProduct.MaterialId, new CancellationToken());
+        //public async Task<JsonResult> OnPostAddToCartAsync([FromBody] CartProduct cartProduct)
+        //{
+        //    var product = _productService.Get(cartProduct.MaterialId, new CancellationToken());
 
-            if (!cartProduct.CartId.HasValue || cartProduct.CartId == 0)
-            {
-                Cart = new Cart();
-                Cart = await _cartService.Create(Cart);
-                HttpContext.Session.SetInt32("CartId", Cart.Id);
+        //    if (!cartProduct.CartId.HasValue || cartProduct.CartId == 0)
+        //    {
+        //        Cart = new Cart();
+        //        Cart = await _cartService.Create(Cart);
+        //        HttpContext.Session.SetInt32("CartId", Cart.Id);
 
-            }
-            else
-            {
-                Cart = await _cartService.GetCartIncludeAsync(cartProduct.CartId.Value, new CancellationToken());
-            }
+        //    }
+        //    else
+        //    {
+        //        Cart = await _cartService.GetCartIncludeAsync(cartProduct.CartId.Value, new CancellationToken());
+        //    }
 
-            Cart.Materials.Add(product);
-            Cart.NumberOfProducts = Cart.Materials.Count;
-            Cart.TotalPrice = Cart.Materials.Sum(p => p.MaterialPrice) + Cart.Products.Sum(m => m.ProductPrice);
-            await _cartService.Update(Cart);
+        //    Cart.Materials.Add(product);
+        //    Cart.NumberOfProducts = Cart.Materials.Count;
+        //    Cart.TotalPrice = Cart.Materials.Sum(p => p.MaterialPrice) + Cart.Products.Sum(m => m.ProductPrice);
+        //    await _cartService.Update(Cart);
 
-            return new JsonResult(new { CartId = Cart.Id, Materials = Cart.Materials.Select(p => new { MaterialId = p.Id }).ToList() });
-        }
+        //    return new JsonResult(new { CartId = Cart.Id, Materials = Cart.Materials.Select(p => new { MaterialId = p.Id }).ToList() });
+        //}
     }
 }
