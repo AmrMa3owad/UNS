@@ -52,3 +52,56 @@ nav a {
     margin: 10px;
     width: 250px;
 }
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #004466;
+    color: white;
+}
+
+    header .logo img {
+        height: 50px;
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+    nav a:hover {
+        color: #00aaff;
+    }
+
+/* Footer */
+footer {
+    background: #002233;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+    .social-links img:hover {
+        transform: scale(1.1);
+    }
