@@ -1,0 +1,67 @@
+﻿/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply to sections */
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Smooth Hover Effects */
+.btn {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+    .btn:hover {
+        transform: scale(1.05);
+        background-color: #006699;
+    }
+
+/* Product Hover Effect */
+.product {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+/* Input Field Focus Animation */
+input, textarea {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+    input:focus, textarea:focus {
+        box-shadow: 0px 0px 10px rgba(0, 102, 153, 0.5);
+        transform: scale(1.02);
+    }
+
+/* Image Pop-in Effect */
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+img {
+    animation: popIn 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+}
