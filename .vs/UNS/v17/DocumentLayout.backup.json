@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CBECD50-FECF-4F38-A737-65D754986011}|Orion\\Orion.csproj|c:\\users\\amr\\source\\repos\\amrma3owad\\uns\\orion\\pages\\enduser\\raw.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CBECD50-FECF-4F38-A737-65D754986011}|Orion\\Orion.csproj|solutionrelative:orion\\pages\\enduser\\raw.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CBECD50-FECF-4F38-A737-65D754986011}|Orion\\Orion.csproj|c:\\users\\amr\\source\\repos\\amrma3owad\\uns\\orion\\pages\\enduser\\raw.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5CBECD50-FECF-4F38-A737-65D754986011}|Orion\\Orion.csproj|solutionrelative:orion\\pages\\enduser\\raw.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5CBECD50-FECF-4F38-A737-65D754986011}|Orion\\Orion.csproj|c:\\users\\amr\\source\\repos\\amrma3owad\\uns\\orion\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5CBECD50-FECF-4F38-A737-65D754986011}|Orion\\Orion.csproj|solutionrelative:orion\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "raw.cshtml",
-              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\Orion\\Pages\\EndUser\\raw.cshtml",
-              "RelativeDocumentMoniker": "Orion\\Pages\\EndUser\\raw.cshtml",
-              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\Orion\\Pages\\EndUser\\raw.cshtml",
-              "RelativeToolTip": "Orion\\Pages\\EndUser\\raw.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T17:37:39.244Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
@@ -74,20 +57,16 @@
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "raw.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\Orion\\Pages\\EndUser\\raw.cshtml.cs",
-              "RelativeDocumentMoniker": "Orion\\Pages\\EndUser\\raw.cshtml.cs",
-              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\Orion\\Pages\\EndUser\\raw.cshtml.cs",
-              "RelativeToolTip": "Orion\\Pages\\EndUser\\raw.cshtml.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwE0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T17:33:36.402Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\Orion\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Orion\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\Orion\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Orion\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-28T12:57:56.591Z",
               "EditorCaption": ""
             }
           ]
