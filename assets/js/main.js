@@ -18,7 +18,6 @@
         if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
         window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
     }
-
     document.addEventListener('scroll', toggleScrolled);
     window.addEventListener('load', toggleScrolled);
 
@@ -26,7 +25,6 @@
      * Mobile nav toggle
      */
     const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-
     function mobileNavToogle() {
         document.querySelector('body').classList.toggle('mobile-nav-active');
         mobileNavToggleBtn.classList.toggle('bi-list');
@@ -71,7 +69,6 @@
      * Scroll top button
      */
     let scrollTop = document.querySelector('.scroll-top');
-
     function toggleScrollTop() {
         if (scrollTop) {
             window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
@@ -84,7 +81,6 @@
             behavior: 'smooth'
         });
     });
-
     window.addEventListener('load', toggleScrollTop);
     document.addEventListener('scroll', toggleScrollTop);
 
@@ -130,7 +126,6 @@
             let config = JSON.parse(
                 swiperElement.querySelector(".swiper-config").innerHTML.trim()
             );
-
             if (swiperElement.classList.contains("swiper-tab")) {
                 initSwiperWithCustomPagination(swiperElement, config);
             } else {
@@ -162,7 +157,6 @@
      * Navmenu Scrollspy
      */
     let navmenulinks = document.querySelectorAll('.navmenu a');
-
     function navmenuScrollspy() {
         navmenulinks.forEach(navmenulink => {
             if (!navmenulink.hash) return;
@@ -194,7 +188,6 @@
                 var tab = new bootstrap.Tab(triggerEl);
                 tab.show();
             } else if (document.querySelector(hash)) {
-                // Otherwise, perform a smooth scroll to the element
                 let section = document.querySelector(hash);
                 let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
                 window.scrollTo({
@@ -202,6 +195,101 @@
                     behavior: 'smooth'
                 });
             }
+        }
+    });
+
+    /**
+     * Advanced Search Functionality
+     * - If a search query parameter (?q=...) is present, this code will check our searchData mapping.
+     * - If a match is found, it will redirect to the target URL (which can include an anchor).
+     * - If no match is found, it will redirect to not-found.html.
+     * - Additionally, as the user types in the search field, suggestions will be displayed.
+     */
+    window.addEventListener('DOMContentLoaded', function () {
+        // Select the search input field in the header
+        const searchInput = document.querySelector('.header-search input[name="q"]');
+        if (!searchInput) return;
+
+        // Create a suggestion box and insert it after the search input
+        const suggestionBox = document.createElement('div');
+        suggestionBox.classList.add('search-suggestions');
+        searchInput.parentNode.appendChild(suggestionBox);
+
+        // Define our search mapping data. Use lowercase keywords for matching.
+        const searchData = [
+            { keyword: "unicid forte", url: "instrumental.html#departments-tab-1" },
+            { keyword: "unicid forte plus", url: "instrumental.html#departments-tab-2" },
+            { keyword: "instrumental", url: "instrumental.html" },
+            { keyword: "surfaces", url: "surfaces.html" },
+            { keyword: "unicid spray", url: "surfaces.html#departments-tab-1" },
+            { keyword: "Unicid Free", url: "surfaces.html#departments-tab-2" },
+            { keyword: "hand antiseptic", url: "hand-antiseptic.html" },
+            { keyword: "uniguard", url: "hand-antiseptic.html#departments-tab-1" },
+            { keyword: "uniscrub 4%", url: "hand-antiseptic.html#departments-tab-2" },
+            { keyword: "floors", url: "floors.html" },
+            { keyword: "uni-surf", url: "floors.html#departments-tab-1" },
+            { keyword: "dental suction", url: "dental-suction.html" },
+            { keyword: "unijet dd", url: "dental-suction.html#departments-tab-1" },
+            { keyword: "irrigation solutions", url: "irrigation-solutions.html" },
+            { keyword: "hexiroot 2%", url: "irrigation-solutions.html#departments-tab-1" },
+            { keyword: "hyporoot 2%", url: "irrigation-solutions.html#departments-tab-2" },
+            { keyword: "hyporoot 5.25%", url: "irrigation-solutions.html#departments-tab-3" }
+
+            // Add more entries as needed
+        ];
+
+        // Function to display suggestions in the suggestion box
+        function showSuggestions(filtered) {
+            suggestionBox.innerHTML = '';
+            if (filtered.length === 0) {
+                const noResult = document.createElement('div');
+                noResult.textContent = 'No suggestions found';
+                suggestionBox.appendChild(noResult);
+            } else {
+                filtered.forEach(item => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.textContent = item.keyword;
+                    suggestionItem.classList.add('suggestion-item');
+                    suggestionItem.addEventListener('click', function () {
+                        window.location.href = item.url;
+                    });
+                    suggestionBox.appendChild(suggestionItem);
+                });
+            }
+            suggestionBox.style.display = filtered.length > 0 ? 'block' : 'none';
+        }
+
+        // Event listener for search input keyup to display suggestions
+        searchInput.addEventListener('keyup', function (e) {
+            const query = searchInput.value.toLowerCase().trim();
+            if (query.length === 0) {
+                suggestionBox.style.display = 'none';
+                return;
+            }
+            const filtered = searchData.filter(item => item.keyword.includes(query));
+            showSuggestions(filtered);
+        });
+
+        // Hide suggestions when clicking outside the search field
+        document.addEventListener('click', function (e) {
+            if (!suggestionBox.contains(e.target) && e.target !== searchInput) {
+                suggestionBox.style.display = 'none';
+            }
+        });
+
+        // Handle search form submission
+        const searchForm = document.querySelector('.header-search form');
+        if (searchForm) {
+            searchForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const query = searchInput.value.toLowerCase().trim();
+                let found = searchData.find(item => item.keyword === query || item.keyword.includes(query));
+                if (found) {
+                    window.location.href = found.url;
+                } else {
+                    window.location.href = 'not-found.html';
+                }
+            });
         }
     });
 

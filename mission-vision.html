@@ -58,96 +58,102 @@
 
     <div class="branding d-flex align-items-center">
 
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">UNS</h1>
-        </a>
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                 <img src="assets/img/logo.png" alt=""> 
+                <h1 class="sitename">UNS</h1>
+            </a>
+            <!-- Search Form -->
+            <div class="header-search">
+                <form action="our-products.html" method="GET">
+                    <input type="text" name="q" placeholder="Search products..." />
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mission-vision.html" class="active">Mission and Vision</a></li>
+                    <li><a href="our-partners.html">Our Partners</a></li>
 
-        <nav id="navmenu" class="navmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="mission-vision.html" class="active">Mission and Vision</a></li>
-                <li><a href="our-partners.html">Our Partners</a></li>
+                    <li class="dropdown">
+                        <a href="our-products.html">
+                            <span>Our Products</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        </a>
+                        <ul>
+                            <!-- Instrumental Dropdown (Fixed) -->
+                            <li class="dropdown">
+                                <a href="instrumental.html">
+                                    <span>Instrumental</span>
+                                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="instrumental.html#departments-tab-1">Unicid Forte</a></li>
+                                    <li><a href="instrumental.html#departments-tab-2">Unicid Forte Plus</a></li>
+                                </ul>
+                            </li>
+                            <!-- Other Dropdowns -->
+                            <li class="dropdown">
+                                <a href="surfaces.html">
+                                    <span>Surfaces</span>
+                                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="surfaces.html#departments-tab-1">Unicid Spray</a></li>
+                                    <li><a href="surfaces.html#departments-tab-2">Unicid Free</a></li>
+                                </ul>
+                            </li>
 
-                <li class="dropdown">
-                    <a href="our-products.html">
-                        <span>Our Products</span>
-                        <i class="bi bi-chevron-down toggle-dropdown"></i>
-                    </a>
-                    <ul>
-                        <!-- Instrumental Dropdown (Fixed) -->
-                        <li class="dropdown">
-                            <a href="instrumental.html">
-                                <span>Instrumental</span>
-                                <i class="bi bi-chevron-down toggle-dropdown"></i>
-                            </a>
-                            <ul>
-                                <li><a href="instrumental.html#departments-tab-1">Unicid Forte</a></li>
-                                <li><a href="instrumental.html#departments-tab-2">Unicid Forte Plus</a></li>
-                            </ul>
-                        </li>
-                        <!-- Other Dropdowns -->
-                        <li class="dropdown">
-                            <a href="surfaces.html">
-                                <span>Surfaces</span>
-                                <i class="bi bi-chevron-down toggle-dropdown"></i>
-                            </a>
-                            <ul>
-                                <li><a href="surfaces.html#departments-tab-1">Unicid Spray</a></li>
-                                <li><a href="surfaces.html#departments-tab-2">Unicid Free</a></li>
-                            </ul>
-                        </li>
+                            <li class="dropdown">
+                                <a href="hand-antiseptic.html">
+                                    <span>Hand Antiseptic</span>
+                                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="hand-antiseptic.html#departments-tab-1">Uniguard</a></li>
+                                    <li><a href="hand-antiseptic.html#departments-tab-2">Uniscrub 4%</a></li>
+                                </ul>
+                            </li>
 
-                        <li class="dropdown">
-                            <a href="hand-antiseptic.html">
-                                <span>Hand Antiseptic</span>
-                                <i class="bi bi-chevron-down toggle-dropdown"></i>
-                            </a>
-                            <ul>
-                                <li><a href="hand-antiseptic.html#departments-tab-1">Uniguard</a></li>
-                                <li><a href="hand-antiseptic.html#departments-tab-2">Uniscrub 4%</a></li>
-                            </ul>
-                        </li>
+                            <li class="dropdown">
+                                <a href="floors.html">
+                                    <span>Floors</span>
+                                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="floors.html#departments-tab-1">Uni-Surf</a></li>
+                                </ul>
+                            </li>
 
-                        <li class="dropdown">
-                            <a href="floors.html">
-                                <span>Floors</span>
-                                <i class="bi bi-chevron-down toggle-dropdown"></i>
-                            </a>
-                            <ul>
-                                <li><a href="floors.html#departments-tab-1">Uni-Surf</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="dental-suction.html">
-                                <span>Dental Suction</span>
-                                <i class="bi bi-chevron-down toggle-dropdown"></i>
-                            </a>
-                            <ul>
-                                <li><a href="dental-suction.html#departments-tab-1">Unijet DD</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="irrigation-solutions.html">
-                                <span>Irrigation Solutions</span>
-                                <i class="bi bi-chevron-down toggle-dropdown"></i>
-                            </a>
-                            <ul>
-                                <li><a href="irrigation-solutions.html#departments-tab-1">Hexiroot 2%</a></li>
-                                <li><a href="irrigation-solutions.html#departments-tab-2">Hyporoot 2%</a></li>
-                                <li><a href="irrigation-solutions.html#departments-tab-3">Hyporoot 5.25%</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-      </div>
+                            <li class="dropdown">
+                                <a href="dental-suction.html">
+                                    <span>Dental Suction</span>
+                                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="dental-suction.html#departments-tab-1">Unijet DD</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="irrigation-solutions.html">
+                                    <span>Irrigation Solutions</span>
+                                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="irrigation-solutions.html#departments-tab-1">Hexiroot 2%</a></li>
+                                    <li><a href="irrigation-solutions.html#departments-tab-2">Hyporoot 2%</a></li>
+                                    <li><a href="irrigation-solutions.html#departments-tab-3">Hyporoot 5.25%</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
 
     </div>
 

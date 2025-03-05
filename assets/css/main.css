@@ -1812,3 +1812,88 @@ section,
 .swiper-pagination {
     margin-top: 15px;
 }
+/* Header Search Styling */
+.header-search {
+    position: relative; /* make this container the positioning context */
+    flex: 1;
+    max-width: 300px;
+    margin: 0 15px;
+}
+
+    .header-search form {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-search input[type="text"] {
+        width: 100%;
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px 0 0 3px;
+        outline: none;
+    }
+
+    .header-search button {
+        padding: 5px 8px;
+        border: 1px solid #ccc;
+        border-left: none;
+        background: #00aaff;
+        color: #fff;
+        border-radius: 0 3px 3px 0;
+        cursor: pointer;
+    }
+
+/* Updated suggestions styling */
+.search-suggestions {
+    position: absolute;
+    top: 100%; /* place it directly below the search input */
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    .suggestion-item:hover {
+        background: #f0f0f0;
+    }
+.download-datasheet {
+    margin: 40px 0;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+    .download-datasheet h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .download-datasheet p {
+        margin-bottom: 20px;
+    }
+
+.btn-preview,
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+    .btn-preview:hover,
+    .btn-download:hover {
+        background: #0088cc;
+    }
