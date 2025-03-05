@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\our-products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:our-products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\unicid-forte.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:unicid-forte.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,15 +70,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAsEAAAAAAAAAAAAADEAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAPEBAAAAAAAAAAAAAP4BAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-01T15:07:51.467Z",
+              "WhenOpened": "2025-03-03T02:39:40.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "unicid-forte.html",
+              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\unicid-forte.html",
+              "RelativeDocumentMoniker": "unicid-forte.html",
+              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\unicid-forte.html",
+              "RelativeToolTip": "unicid-forte.html",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-03T02:39:35.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "our-products.html",
+              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\our-products.html",
+              "RelativeDocumentMoniker": "our-products.html",
+              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\our-products.html",
+              "RelativeToolTip": "our-products.html",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAE0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-03T02:32:07.319Z",
               "EditorCaption": ""
             }
           ]

@@ -1727,3 +1727,88 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/***** Mission & Vision Section *****/
+.mission-vision {
+    background-color: #f8f9fa; /* or your preferred color */
+    padding: 60px 0;
+}
+
+/* Mission */
+.mission-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+
+.mission-text {
+    font-size: 17px;
+    color: var(--default-color);
+    line-height: 1.8;
+}
+
+    .mission-text .highlight {
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+
+.mission-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .mission-card:hover {
+        transform: translateY(-5px);
+    }
+
+.mission-icon {
+    font-size: 40px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+/* Vision */
+.vision-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 30px;
+}
+
+.vision-swiper {
+    width: 100%;
+}
+
+.vision-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .vision-card:hover {
+        transform: translateY(-5px);
+    }
+
+.vision-icon {
+    font-size: 40px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.vision-card .highlight {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Swiper Pagination Adjustments */
+.swiper-pagination {
+    margin-top: 15px;
+}
