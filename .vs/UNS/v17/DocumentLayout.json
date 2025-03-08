@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,27 +63,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.js",
-              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\js\\main.js",
-              "RelativeDocumentMoniker": "assets\\js\\main.js",
-              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\js\\main.js",
-              "RelativeToolTip": "assets\\js\\main.js",
-              "ViewState": "AgIAANsAAAAAAAAAAAAkwNwAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-08T14:50:55.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEQAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-08T13:34:19.235Z",
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css",
+              "RelativeDocumentMoniker": "assets\\css\\main.css",
+              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css",
+              "RelativeToolTip": "assets\\css\\main.css",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAAABsBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-08T17:23:56.126Z",
               "EditorCaption": ""
             }
           ]
