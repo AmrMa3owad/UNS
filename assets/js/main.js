@@ -222,7 +222,7 @@
             { keyword: "instrumental", url: "instrumental.html" },
             { keyword: "surfaces", url: "surfaces.html" },
             { keyword: "unicid spray", url: "surfaces.html#departments-tab-1" },
-            { keyword: "Unicid Free", url: "surfaces.html#departments-tab-2" },
+            { keyword: "unicid free", url: "surfaces.html#departments-tab-2" },
             { keyword: "hand antiseptic", url: "hand-antiseptic.html" },
             { keyword: "uniguard", url: "hand-antiseptic.html#departments-tab-1" },
             { keyword: "uniscrub 4%", url: "hand-antiseptic.html#departments-tab-2" },
@@ -234,7 +234,6 @@
             { keyword: "hexiroot 2%", url: "irrigation-solutions.html#departments-tab-1" },
             { keyword: "hyporoot 2%", url: "irrigation-solutions.html#departments-tab-2" },
             { keyword: "hyporoot 5.25%", url: "irrigation-solutions.html#departments-tab-3" }
-
             // Add more entries as needed
         ];
 
@@ -243,7 +242,7 @@
             suggestionBox.innerHTML = '';
             if (filtered.length === 0) {
                 const noResult = document.createElement('div');
-                noResult.textContent = 'No suggestions found';
+                noResult.textContent = 'No matching results were found.';
                 suggestionBox.appendChild(noResult);
             } else {
                 filtered.forEach(item => {
@@ -292,5 +291,4 @@
             });
         }
     });
-
 })();
