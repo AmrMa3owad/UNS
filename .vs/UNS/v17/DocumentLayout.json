@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\mission-vision.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:mission-vision.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,15 +66,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.css",
               "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css",
               "RelativeDocumentMoniker": "assets\\css\\main.css",
               "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css",
               "RelativeToolTip": "assets\\css\\main.css",
-              "ViewState": "AgIAAAwBAAAAAAAAAAAAABsBAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAALUGAAAAAAAAAAAIwBkHAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-08T17:23:56.126Z",
+              "WhenOpened": "2025-03-08T19:49:40.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mission-vision.html",
+              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\mission-vision.html",
+              "RelativeDocumentMoniker": "mission-vision.html",
+              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\mission-vision.html",
+              "RelativeToolTip": "mission-vision.html",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAYwM8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-08T19:47:47.361Z",
               "EditorCaption": ""
             }
           ]
