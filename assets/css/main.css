@@ -2022,3 +2022,55 @@ section,
     .section-title p {
         margin-bottom: 0;
     }
+/*--------------------------------------------------------------
+# Enhanced Table Styling
+--------------------------------------------------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    table thead {
+        background-color: var(--accent-color);
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+        table thead th {
+            padding: 12px 15px;
+        }
+
+    table tbody tr {
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        table tbody tr:hover {
+            background-color: #e3f2fd;
+        }
+
+    table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
