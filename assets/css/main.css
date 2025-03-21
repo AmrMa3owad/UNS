@@ -2074,3 +2074,106 @@ table {
         white-space: nowrap;
     }
 }
+/* Modern Distribution Agents Section */
+.agents.section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.agents .section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+    text-align: center;
+}
+
+.agents .section-title p {
+    font-size: 16px;
+    color: var(--default-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Modern agent card styles */
+.modern-agents .agent-card {
+    background: #ffffff;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+    .modern-agents .agent-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+.agent-card .agent-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 5px;
+}
+
+.agent-card .agent-location {
+    font-size: 16px;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.agent-card .agent-info {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--default-color);
+    margin-bottom: 0;
+}
+
+/* Style for phone links */
+.agent-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+    .agent-info a:hover {
+        color: var(--heading-color);
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .agents.section {
+        padding: 40px 15px;
+    }
+
+    .agents .section-title h2 {
+        font-size: 28px;
+    }
+
+    .modern-agents .agent-card {
+        padding: 20px;
+    }
+
+    .agent-card .agent-name {
+        font-size: 20px;
+    }
+
+    .agent-card .agent-info {
+        font-size: 14px;
+    }
+}
+/* Universal Product Photo Styling */
+.product-photo {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+    .product-photo:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
