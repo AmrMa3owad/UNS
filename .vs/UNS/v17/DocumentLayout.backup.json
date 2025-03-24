@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\instrumental.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instrumental.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\our-products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:our-products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -75,51 +67,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "instrumental.html",
-              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\instrumental.html",
-              "RelativeDocumentMoniker": "instrumental.html",
-              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\instrumental.html",
-              "RelativeToolTip": "instrumental.html",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAmwAIBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-21T23:43:43.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "our-products.html",
-              "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\our-products.html",
-              "RelativeDocumentMoniker": "our-products.html",
-              "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\our-products.html",
-              "RelativeToolTip": "our-products.html",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-21T23:43:32.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "main.css",
               "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css",
               "RelativeDocumentMoniker": "assets\\css\\main.css",
               "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\assets\\css\\main.css",
               "RelativeToolTip": "assets\\css\\main.css",
-              "ViewState": "AgIAAG0IAAAAAAAAAADwv4MIAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMMCAAAAAAAAAADwv9ICAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-03-21T23:34:21.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\Amr\\source\\repos\\AmrMa3owad\\UNS\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAOIBAAAAAAAAAAAmwOoBAABXAAAAAAAAAA==",
+              "ViewState": "AgIAADYCAAAAAAAAAAAUwEQCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-03-13T21:41:27.393Z",
               "EditorCaption": ""

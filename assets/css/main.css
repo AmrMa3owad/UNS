@@ -2177,3 +2177,48 @@ table {
         transform: scale(1.03);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     }
+/* Exclusive Distributor Card Styling */
+.agent-card.exclusive {
+    background-color: #f9fff9; /* very light green tint */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+    .agent-card.exclusive:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(40, 167, 69, 0.3);
+    }
+
+    /* Adjust typography for exclusive distributor */
+    .agent-card.exclusive .agent-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-bottom: 10px;
+    }
+
+    .agent-card.exclusive .agent-location {
+        font-size: 1rem;
+        color: var(--accent-color);
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .agent-card.exclusive .agent-info {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--default-color);
+    }
+
+/* Make phone links look modern */
+.agent-card .agent-info a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+    .agent-card .agent-info a:hover {
+        color: var(--heading-color);
+    }
