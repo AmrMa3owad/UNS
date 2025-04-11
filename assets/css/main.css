@@ -2250,3 +2250,16 @@ table {
         height: 200px;
     }
     }
+
+/* Ensure the container for the image and button acts as a relative positioning context */
+.col-lg-4.text-center.order-1.order-lg-2 {
+    position: relative;
+}
+
+/* Override the play button positioning and sizing for the irrigation solutions section */
+.col-lg-4.text-center.order-1.order-lg-2 .pulsating-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
