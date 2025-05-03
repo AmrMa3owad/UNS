@@ -233,7 +233,10 @@
             { keyword: "irrigation solutions", url: "irrigation-solutions.html" },
             { keyword: "hexiroot 2%", url: "irrigation-solutions.html#departments-tab-1" },
             { keyword: "hyporoot 2%", url: "irrigation-solutions.html#departments-tab-2" },
-            { keyword: "hyporoot 5.25%", url: "irrigation-solutions.html#departments-tab-3" }
+            { keyword: "hyporoot 5.25%", url: "irrigation-solutions.html#departments-tab-3" },
+            { keyword: "water decontamination", url: "water-decontamination.html" },
+            { keyword: "uni aqua", url: "water-decontamination.html#departments-tab-1" }
+
             // Add more entries as needed
         ];
 
