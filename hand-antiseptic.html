@@ -222,77 +222,58 @@
 
   <footer id="footer" class="footer light-background">
 
-      <div class="container footer-top">
+      <div class="container footer-top py-4">
           <div class="row gy-4">
-              <div class="col-lg-4 col-md-6 footer-about">
-                  <a href="index.html" class="logo d-flex align-items-center">
-                      <img src="assets/img/logo.png" alt="">
-                      <span class="sitename">UNS</span>
+
+              <!-- About Section -->
+              <div class="col-lg-4 col-md-6 footer-about" itemscope itemtype="http://schema.org/LocalBusiness">
+                  <a href="index.html" class="logo d-flex align-items-center" itemprop="url">
+                      <img src="assets/img/logo.png" alt="UNS Logo" itemprop="logo">
+                      <span class="sitename" itemprop="name">UNS</span>
                   </a>
                   <div class="footer-contact pt-3">
-                      <p>Cairo-Egypt</p>
-                      <p class="mt-3">
-                          <strong>Phone:</strong><a href="tel:+201120123180"><span>+20 1120123180</span></a>
-                      </p>
-                      <p><strong>Email:</strong> <a href="mailto:Info@uns-eg.com">Info@uns-eg.com</a></p>
-                      <p><strong>Whatsapp:</strong> <a href="https://wa.me/19022005544" target="_blank" rel="noopener">+1 (902) 200-5544</a></p>
+                      <p itemprop="address">Cairo, Egypt</p>
+                      <p class="mt-3"><strong>Phone:</strong> <a href="tel:+201120123180" itemprop="telephone"><span>+20 1120123180</span></a></p>
+                      <p><strong>Email:</strong> <a href="mailto:Info@uns-eg.com" itemprop="email">Info@uns-eg.com</a></p>
+                      <p><strong>WhatsApp:</strong> <a href="https://wa.me/19022005544" target="_blank" rel="noopener">+1 (902) 200-5544</a></p>
                   </div>
+
+                  <!-- Social Media -->
                   <div class="social-links d-flex mt-4">
-                      <a href="https://wa.me/19022005544" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
-                      <a href="https://www.facebook.com/share/18oiJGKWo7/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
+                      <a href="https://wa.me/19022005544" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                      <a href="https://www.facebook.com/share/18oiJGKWo7/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="#" aria-disabled="true" title="Instagram - Coming Soon"><i class="bi bi-instagram"></i></a>
+                      <a href="#" aria-disabled="true" title="LinkedIn - Coming Soon"><i class="bi bi-linkedin"></i></a>
                   </div>
               </div>
 
-              <div class="col-lg-2 col-md-3 footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Terms of service</a></li>
-                      <li><a href="#">Privacy policy</a></li>
-                  </ul>
-              </div>
-
+              <!-- Our Services Links -->
               <div class="col-lg-2 col-md-3 footer-links">
                   <h4>Our Services</h4>
                   <ul>
-                      <li><a href="#">Web Design</a></li>
-                      <li><a href="#">Web Development</a></li>
-                      <li><a href="#">Product Management</a></li>
-                      <li><a href="#">Marketing</a></li>
-                      <li><a href="#">Graphic Design</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="our-products.html">Products</a></li>
+                      <li><a href="mission-vision.html">Mission & Vision</a></li>
+                      <li><a href="our-partners.html">Partners</a></li>
                   </ul>
               </div>
 
+              <!-- Useful External Links -->
               <div class="col-lg-2 col-md-3 footer-links">
-                  <h4>Hic solutasetp</h4>
+                  <h4>Useful Links</h4>
                   <ul>
-                      <li><a href="#">Molestiae accusamus iure</a></li>
-                      <li><a href="#">Excepturi dignissimos</a></li>
-                      <li><a href="#">Suscipit distinctio</a></li>
-                      <li><a href="#">Dilecta</a></li>
-                      <li><a href="#">Sit quas consectetur</a></li>
+                      <li><a href="https://www.cdc.gov/" target="_blank" rel="noopener">CDC</a></li>
+                      <li><a href="https://www.osha.gov/" target="_blank" rel="noopener">OSHA</a></li>
+                      <li><a href="https://www.ada.gov/" target="_blank" rel="noopener">ADA</a></li>
+                      <li><a href="https://www.who.int/health-topics/infection-prevention-and-control#tab=tab_1" target="_blank" rel="noopener">WHO</a></li>
                   </ul>
               </div>
-
-              <div class="col-lg-2 col-md-3 footer-links">
-                  <h4>Nobis illum</h4>
-                  <ul>
-                      <li><a href="#">Ipsam</a></li>
-                      <li><a href="#">Laudantium dolorum</a></li>
-                      <li><a href="#">Dinera</a></li>
-                      <li><a href="#">Trodelas</a></li>
-                      <li><a href="#">Flexo</a></li>
-                  </ul>
-              </div>
-
           </div>
       </div>
 
-      <div class="container copyright text-center mt-4">
+      <!-- Footer Bottom -->
+      <div class="container copyright text-center">
           <p>© <span>Copyright</span> <strong class="px-1 sitename">UNS</strong> <span>All Rights Reserved</span></p>
           <div class="credits">
               <!-- All the links in the footer should remain intact. -->
