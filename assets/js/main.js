@@ -235,7 +235,12 @@
             { keyword: "hyporoot 2%", url: "irrigation-solutions.html#departments-tab-2" },
             { keyword: "hyporoot 5.25%", url: "irrigation-solutions.html#departments-tab-3" },
             { keyword: "water decontamination", url: "water-decontamination.html" },
-            { keyword: "uni aqua", url: "water-decontamination.html#departments-tab-1" }
+            { keyword: "uni aqua", url: "water-decontamination.html#departments-tab-1" },
+            { keyword: "wipes", url: "wipes.html" },
+            { keyword: "unicavi wipes", url: "wipes.html#departments-tab-1" },
+            { keyword: "unicid free wipes", url: "wipes.html#departments-tab-2" },
+            { keyword: "unicid wipes", url: "wipes.html#departments-tab-3" },
+            { keyword: "ipa 70% wipes", url: "wipes.html#departments-tab-4" }
 
             // Add more entries as needed
         ];
