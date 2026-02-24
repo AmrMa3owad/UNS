@@ -223,6 +223,7 @@
             { keyword: "surfaces", url: "surfaces.html" },
             { keyword: "unicid spray", url: "surfaces.html#departments-tab-1" },
             { keyword: "unicid free", url: "surfaces.html#departments-tab-2" },
+            { keyword: "unicavi spray", url: "surfaces.html#departments-tab-3" },
             { keyword: "hand antiseptic", url: "hand-antiseptic.html" },
             { keyword: "uniguard", url: "hand-antiseptic.html#departments-tab-1" },
             { keyword: "uniscrub 4%", url: "hand-antiseptic.html#departments-tab-2" },
