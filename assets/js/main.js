@@ -248,11 +248,7 @@
         // Function to display suggestions in the suggestion box
         function showSuggestions(filtered) {
             suggestionBox.innerHTML = '';
-            if (filtered.length === 0) {
-                const noResult = document.createElement('div');
-                noResult.textContent = 'No matching results were found.';
-                suggestionBox.appendChild(noResult);
-            } else {
+            if (filtered.length > 0) {
                 filtered.forEach(item => {
                     const suggestionItem = document.createElement('div');
                     suggestionItem.textContent = item.keyword;
@@ -262,8 +258,10 @@
                     });
                     suggestionBox.appendChild(suggestionItem);
                 });
+                suggestionBox.style.display = 'block';
+            } else {
+                suggestionBox.style.display = 'none';
             }
-            suggestionBox.style.display = filtered.length > 0 ? 'block' : 'none';
         }
 
         // Event listener for search input keyup to display suggestions
